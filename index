@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Andrew Young | Math Tutoring &amp; College Essay Coaching</title>
+<meta name="description" content="Former math teacher and UC Berkeley grad offering math tutoring, SAT/ACT math prep, and college essay coaching in Daly City, San Mateo, San Francisco, and online.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1b2a41; --muted:#3d4a5c; --bg:#ffffff; --tint:#f4f6f9; --line:#e3e7ee;
+  --accent:#1d4fb8; --accent-hover:#163d8f; --on-accent:#ffffff;
+  --band:#1b2a41; --band-text:#e6eaf1; --placeholder:#eef1f6;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --ink:#eef1f6; --muted:#b8c1cf; --bg:#121a26; --tint:#18222f; --line:#2a3646;
+    --accent:#5b8cf0; --accent-hover:#82a8f5; --on-accent:#0e1520;
+    --band:#0c121b; --band-text:#d5dbe5; --placeholder:#1e2a3a;
+    color-scheme: dark;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{margin:0;font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+a{color:var(--accent)} a:hover{color:var(--accent-hover)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:'Space Grotesk',system-ui,sans-serif;margin:0;letter-spacing:-0.01em}
+p{margin:0}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+section{padding:80px 0}
+.tint{background:var(--tint)}
+.muted{color:var(--muted)}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:12px 24px;border-radius:8px;font-weight:600;text-decoration:none}
+.btn-primary{background:var(--accent);color:var(--on-accent)}
+.btn-primary:hover{background:var(--accent-hover);color:var(--on-accent)}
+.btn-outline{border:2px solid var(--ink);color:var(--ink)}
+.btn-outline:hover{color:var(--ink);background:var(--tint)}
+
+header{border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-top:18px;padding-bottom:18px}
+.brand{font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;font-size:1.25rem;color:var(--ink);text-decoration:none}
+.links{display:flex;flex-wrap:wrap;align-items:center;gap:24px}
+.links a:not(.btn){color:var(--muted);text-decoration:none;font-weight:500}
+.links .btn{min-height:44px;padding:10px 18px}
+
+.hero{display:flex;flex-wrap:wrap;align-items:center;gap:56px;padding-top:88px;padding-bottom:72px}
+.hero-text{flex:999 1 520px;min-width:0;display:flex;flex-direction:column;gap:24px}
+.hero h1{font-size:clamp(2.25rem,5vw,3.25rem);line-height:1.1;letter-spacing:-0.02em}
+.hero .lead{font-size:1.2rem;max-width:560px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+.photo{flex:1 1 300px;max-width:380px;aspect-ratio:4/5;border-radius:16px;overflow:hidden;background:var(--placeholder);border:2px dashed var(--muted);display:flex;align-items:center;justify-content:center;font-weight:600;color:var(--muted);text-align:center;padding:24px}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.photo.has-img{border:none;padding:0}
+
+.head{display:flex;flex-direction:column;gap:8px;margin-bottom:40px}
+h2{font-size:2.25rem}
+.cards{display:flex;flex-wrap:wrap;gap:24px}
+.card{flex:1 1 280px;min-width:0;background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:32px;display:flex;flex-direction:column;gap:12px}
+.card h3{font-size:1.35rem}
+.card svg{stroke:var(--accent)}
+
+.rates{border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:32px}
+.rate{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;padding:20px 28px;border-bottom:1px solid var(--line)}
+.rate:last-child{border-bottom:none}
+.rate strong{font-weight:600}
+.notes{display:flex;flex-wrap:wrap;gap:24px}
+.notes p{flex:1 1 300px;min-width:0}
+
+.band{background:var(--band);color:var(--band-text)}
+.band h2{color:#ffffff}
+@media (prefers-color-scheme: dark){.band h2{color:var(--ink)}}
+.about{display:flex;flex-wrap:wrap;gap:48px}
+.about h2{flex:1 1 260px}
+.about div{flex:999 1 520px;min-width:0;display:flex;flex-direction:column;gap:16px;font-size:1.1rem}
+
+.steps{display:flex;flex-wrap:wrap;gap:24px}
+.step{flex:1 1 260px;min-width:0;display:flex;flex-direction:column;gap:8px}
+.step .num{font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;font-size:2rem;color:var(--accent)}
+.step h3{font-family:'Inter',system-ui,sans-serif;font-size:1.15rem;letter-spacing:0}
+
+.contact{max-width:720px;margin:0 auto;padding:0 24px;display:flex;flex-direction:column;align-items:center;gap:20px;text-align:center}
+
+footer{border-top:1px solid var(--line);padding:28px 0 calc(28px + env(safe-area-inset-bottom,0px))}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;color:var(--muted);font-size:0.9rem}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="wrap" aria-label="Main">
+    <a class="brand" href="#top">Andrew Young</a>
+    <div class="links">
+      <a href="#services">Services</a>
+      <a href="#rates">Rates</a>
+      <a href="#about">About</a>
+      <a class="btn btn-primary" href="#contact">Book a free call</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section id="top" class="wrap hero">
+    <div class="hero-text">
+      <p class="muted">Serving Daly City, San Mateo, San Francisco, and online</p>
+      <h1>Math tutoring and college essay coaching from a former math teacher.</h1>
+      <p class="lead muted">UC Berkeley graduate with a master’s in teaching secondary math. I help students understand the math, not just get through the homework, and I coach college applicants to write essays that sound like them.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#contact">Book a free 15-minute call</a>
+        <a class="btn btn-outline" href="#rates">See rates</a>
+      </div>
+    </div>
+    <!-- PHOTO: upload your photo to the repo as photo.jpg, then replace the line below with:
+         <div class="photo has-img"><img src="photo.jpg" alt="Andrew Young"></div> -->
+    <div class="photo">Your photo goes here</div>
+  </section>
+
+  <section id="services" class="tint">
+    <div class="wrap">
+      <div class="head">
+        <h2>What I help with</h2>
+        <p class="muted">One-on-one sessions, in person or online.</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h10M4 17h7"/><path d="M17 14l4 4M21 14l-4 4"/></svg>
+          <h3>Math tutoring</h3>
+          <p class="muted">Middle school math through precalculus. We fill the gaps behind the struggle, build confidence, and get ahead of tests.</p>
+        </div>
+        <div class="card">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
+          <h3>SAT &amp; ACT math</h3>
+          <p class="muted">Targeted prep built around a diagnostic: the content you’re missing, timing strategy, and practice under real test conditions.</p>
+        </div>
+        <div class="card">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>
+          <h3>College essay coaching</h3>
+          <p class="muted">Brainstorming, structure, and line-by-line feedback for the Common App essay and UC Personal Insight Questions. You write your essay. I help you make it your best.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="rates">
+    <div class="wrap">
+      <div class="head"><h2>Rates</h2></div>
+      <div class="rates">
+        <div class="rate"><strong>Math tutoring</strong><strong>$80 / hour</strong></div>
+        <div class="rate"><strong>SAT &amp; ACT math prep</strong><strong>$100 / hour</strong></div>
+        <div class="rate"><strong>College essay coaching</strong><strong>$110 / hour</strong></div>
+        <div class="rate"><span><strong>Personal statement package</strong><br><span class="muted">3 sessions plus written feedback on every draft</span></span><strong>$450</strong></div>
+        <div class="rate"><span><strong>Full application package</strong><br><span class="muted">Common App essay plus all four UC Personal Insight Questions</span></span><strong>$1,250</strong></div>
+      </div>
+      <div class="notes">
+        <p class="muted"><strong style="color:var(--ink)">Session bundles:</strong> buy 10 tutoring sessions, pay for 9.</p>
+        <p class="muted"><strong style="color:var(--ink)">Cancellations:</strong> please give 24 hours’ notice. Later cancellations are charged in full.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="band">
+    <div class="wrap about">
+      <h2>About me</h2>
+      <div>
+        <p>I’m Andrew. I grew up in the Bay Area and studied economics at UC Berkeley. I taught 7th-grade math in Las Vegas through Teach For America and earned my master’s in teaching secondary math at UNLV.</p>
+        <p>Before teaching, I worked in investment banking, so I can show students where the math they’re learning actually gets used.</p>
+        <p>My approach is simple: find exactly where a student got lost, rebuild from there, and make sure they can do it on their own, not just with me sitting next to them.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="head"><h2>How it works</h2></div>
+      <div class="steps">
+        <div class="step"><span class="num">1</span><h3>Free 15-minute call</h3><p class="muted">We talk about where your student is now and what they need.</p></div>
+        <div class="step"><span class="num">2</span><h3>A clear plan</h3><p class="muted">The first session pinpoints the gaps and sets goals for test dates or deadlines.</p></div>
+        <div class="step"><span class="num">3</span><h3>Steady sessions</h3><p class="muted">Regular sessions with progress updates, so you always know how it’s going.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="tint">
+    <div class="contact">
+      <h2>Book a free 15-minute call</h2>
+      <p class="muted">Tell me a little about your student and we’ll find a time to talk.</p>
+      <!-- Replace YOUR_BOOKING_LINK, YOUR_EMAIL and YOUR_PHONE below -->
+      <a class="btn btn-primary" href="YOUR_BOOKING_LINK">Schedule a call</a>
+      <p class="muted">Or reach me directly: <a href="mailto:YOUR_EMAIL">YOUR_EMAIL</a> or <a href="tel:YOUR_PHONE">YOUR_PHONE</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Andrew Young, Math Tutoring &amp; College Essay Coaching</span>
+    <span>Daly City, San Mateo, San Francisco, and online</span>
+  </div>
+</footer>
+
+</body>
+</html>
